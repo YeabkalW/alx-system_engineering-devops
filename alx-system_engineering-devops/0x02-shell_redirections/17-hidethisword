@@ -1,2 +1,0 @@
-#!/bin/bash
-gred -L bin /etc/passwd
