@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # echo best shool using while loop
 
-x=1
+x=0
 while [ $x -lt 10 ]
 do
     echo "Best School"
