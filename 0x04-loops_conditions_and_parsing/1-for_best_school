@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+:<<"EOF"
+a bash script the displays Best_School 
+10 times
+EOF
+
+str="Best School"
+
+for _ in $(seq 1 10)
+do
+    echo "$str"
+done
