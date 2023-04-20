@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-:<<"EOF"
-a bash script the displays Best_School 
-10 times
-EOF
+#bash script the displays Best_School
 
 str="Best School"
 
