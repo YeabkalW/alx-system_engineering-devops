@@ -9,6 +9,6 @@ do
         echo "Hi"
     fi
 
-    echo "Best School: $x"
+    echo "Best School"
     x=$((x+1))
 done
