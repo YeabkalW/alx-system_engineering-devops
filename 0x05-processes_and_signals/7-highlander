@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# spells invincible!!!
+
+function handler {
+    echo "I am invincible!!!"
+    exit 0
+}
+
+trap 'handler' SIGTERM
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
+
