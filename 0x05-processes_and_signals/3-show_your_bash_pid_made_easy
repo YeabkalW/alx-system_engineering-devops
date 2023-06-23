@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Loop through all directories in /proc that are numeric (i.e. represent a process ID)
+for pid in /proc/[0-9]*/comm; do
+    # Extract the process name from the "comm" file
+    pname=$(cat "$pid")
+    # Check if the process name contains the word "bash"
+    if [[ $pname == *bash* ]]; then
+        # Extract the process ID from the directory name
+        pid=$(basename "$(dirname """$pid""")")
+        # Display the process ID and process name
+        echo "$pid $pname"
+    fi
+done

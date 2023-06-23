@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displayes bash based on the last code
+# shellcheck disable=SC2009
+ps -ef | grep bash | grep -v grep

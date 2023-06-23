@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#bash script the displays Best_School
+
+str="Best School"
+
+for _ in $(seq 1 10)
+do
+    echo "$str"
+done

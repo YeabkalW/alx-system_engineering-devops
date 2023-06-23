@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+git push git@github.com:YeabkalW/alx-system_engineering-devops.git

@@ -1,0 +1,1 @@
+Switching user to Betty Printing username of current user Printing groups user is part of Changing owner Creating empty file hello Making file hello executable Giving user and group executable permission, while others are given read permission Execution permission for all

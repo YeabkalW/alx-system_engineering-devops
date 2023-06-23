@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# uses if to display hi on 9th item
+
+x=0
+while [ $x -lt 10 ]
+do
+    if [ $x -eq 9 ]
+    then
+        echo "Hi"
+    fi
+
+    echo "Best School"
+    x=$((x+1))
+done

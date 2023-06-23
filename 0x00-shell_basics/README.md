@@ -1,0 +1,1 @@
+this script will show the current working directory
