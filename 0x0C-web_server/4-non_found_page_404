@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#configures my nginx server t have a custom 404 page
+
+apt-get update
+apt-get install -y nginx
+
+echo 'server {
+    listen 80 default_server;
+    listen [::];80 default_server;
+
+    server_name yeabkalw.tech
+
+    location / {
+        return 404
+        error_page 404 /404.html;
+    }
+
+    location = /404.html {
+        root /var/www/html;
+        internal;
+    }
+} > /etc/nginx/sites-available/default
+
+echo 'Cock n'\''est pas une page' > /var/www/html/404.html
+
+service nginx restart
