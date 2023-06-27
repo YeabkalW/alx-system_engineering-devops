@@ -3,9 +3,6 @@
 
 apt-get update
 apt-get install -y nginx
-
-sed -i 's/^\(listen\s*\)80;/\180;/g' /etc/nginx/sites-available/default
-
-service nginx restart
-
+ufw allow 'Nginx HTTP'
 echo 'Hello World!' > /var/www/html/index.html
+service nginx restart
